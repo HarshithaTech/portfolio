@@ -33,11 +33,29 @@
             background: rgba(0, 0, 0, 0.7);
             border: 1px solid rgba(25, 118, 210, 0.3);
             box-shadow: 0 0 15px rgba(25, 118, 210, 0.2);
+            position: relative;
+            overflow: hidden;
         }
         
         .project-card:hover {
             border-color: rgba(25, 118, 210, 0.6);
             box-shadow: 0 0 25px rgba(25, 118, 210, 0.4);
+        }
+        
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, #1976d2, #42a5f5, #1976d2);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        
+        .project-card:hover::before {
+            transform: scaleX(1);
         }
     </style>
 </head>
@@ -142,18 +160,20 @@
                     <h3 class="text-2xl font-bold text-blue-300">Intel Image Classification CNN</h3>
                 </div>
                 <p class="text-blue-100 mb-6">
-                    Deep learning CNN model achieving 83.93% accuracy in classifying images across 6 categories: buildings, forest, glacier, mountain, sea, and street.
+                    Deep learning CNN model achieving 83.93% accuracy in classifying images across 6 categories: buildings, forest, glacier, mountain, sea, and street. Uses TensorFlow/Keras with data augmentation and dropout regularization.
                 </p>
                 <div class="flex flex-wrap gap-2 mb-4">
                     <span class="bg-blue-900/50 text-blue-200 px-3 py-1 rounded-full text-sm border border-blue-500/30">TensorFlow</span>
                     <span class="bg-blue-900/50 text-blue-200 px-3 py-1 rounded-full text-sm border border-blue-500/30">CNN</span>
                     <span class="bg-blue-900/50 text-blue-200 px-3 py-1 rounded-full text-sm border border-blue-500/30">Computer Vision</span>
+                    <span class="bg-blue-900/50 text-blue-200 px-3 py-1 rounded-full text-sm border border-blue-500/30">Python</span>
                 </div>
                 <div class="mb-4">
                     <div class="text-sm text-blue-300 mb-2">Key Results:</div>
                     <div class="flex flex-wrap gap-2 text-xs">
                         <span class="bg-blue-800/50 text-blue-200 px-2 py-1 rounded-full border border-blue-500/30">83.93% Test Accuracy</span>
                         <span class="bg-blue-800/50 text-blue-200 px-2 py-1 rounded-full border border-blue-500/30">25K+ Images</span>
+                        <span class="bg-blue-800/50 text-blue-200 px-2 py-1 rounded-full border border-blue-500/30">Data Augmentation</span>
                     </div>
                 </div>
                 <a href="https://github.com/HarshithaTech/intel-image-classification-using-CNN" target="_blank" class="inline-flex items-center text-blue-300 hover:text-blue-200 transition-all duration-300">
@@ -167,12 +187,13 @@
                     <h3 class="text-2xl font-bold text-blue-300">GradeBoardAgent</h3>
                 </div>
                 <p class="text-blue-100 mb-6">
-                    AI-based platform for automating academic grade tracking with dashboard and chat-based interface.
+                    AI-based platform for automating academic grade tracking with dashboard and chat-based interface. Features conversational AI using Gemini and comprehensive analytics dashboard.
                 </p>
                 <div class="flex flex-wrap gap-2 mb-4">
                     <span class="bg-blue-900/50 text-blue-200 px-3 py-1 rounded-full text-sm border border-blue-500/30">FastAPI</span>
                     <span class="bg-blue-900/50 text-blue-200 px-3 py-1 rounded-full text-sm border border-blue-500/30">SQLite</span>
                     <span class="bg-blue-900/50 text-blue-200 px-3 py-1 rounded-full text-sm border border-blue-500/30">Gemini AI</span>
+                    <span class="bg-blue-900/50 text-blue-200 px-3 py-1 rounded-full text-sm border border-blue-500/30">Python</span>
                 </div>
                 <a href="https://github.com/HarshithaTech/ByteCrew.git" target="_blank" class="inline-flex items-center text-blue-300 hover:text-blue-200 transition-all duration-300">
                     🔗 <span class="ml-2">View on GitHub</span>
@@ -185,11 +206,12 @@
                     <h3 class="text-2xl font-bold text-blue-300">Quiz Application Using Flutter</h3>
                 </div>
                 <p class="text-blue-100 mb-6">
-                    Mobile quiz app with score tracking, question randomization, and interactive UI.
+                    Cross-platform mobile quiz application with score tracking, question randomization, and interactive UI. Built with Flutter for seamless performance across iOS and Android.
                 </p>
                 <div class="flex flex-wrap gap-2">
                     <span class="bg-blue-900/50 text-blue-200 px-3 py-1 rounded-full text-sm border border-blue-500/30">Flutter</span>
                     <span class="bg-blue-900/50 text-blue-200 px-3 py-1 rounded-full text-sm border border-blue-500/30">Dart</span>
+                    <span class="bg-blue-900/50 text-blue-200 px-3 py-1 rounded-full text-sm border border-blue-500/30">Mobile Dev</span>
                 </div>
             </div>
         </div>
