@@ -254,7 +254,34 @@
     <section id="projects" class="py-24 px-4 max-w-6xl mx-auto relative">
         <div class="absolute top-10 right-10 text-6xl opacity-10 animate-pulse-slow">💼</div>
         <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">Projects</h2>
-        <div class="grid md:grid-cols-2 gap-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-8">
+            <!-- Intel Image Classification Project -->
+            <div class="group bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl hover:shadow-orange-500/20 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-orange-500 to-red-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+                <div class="flex items-center mb-4">
+                    <div class="text-3xl mr-3 group-hover:animate-bounce">🧠</div>
+                    <h3 class="text-2xl font-bold text-orange-400">Intel Image Classification CNN</h3>
+                </div>
+                <p class="text-gray-300 mb-6">
+                    Deep learning CNN model achieving 83.93% accuracy in classifying images across 6 categories: buildings, forest, glacier, mountain, sea, and street.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-orange-500/20 text-orange-300 px-3 py-1 rounded-full text-sm border border-orange-500/30 hover:bg-orange-500/30 transition-colors">TensorFlow</span>
+                    <span class="bg-red-500/20 text-red-300 px-3 py-1 rounded-full text-sm border border-red-500/30 hover:bg-red-500/30 transition-colors">CNN</span>
+                    <span class="bg-yellow-500/20 text-yellow-300 px-3 py-1 rounded-full text-sm border border-yellow-500/30 hover:bg-yellow-500/30 transition-colors">Computer Vision</span>
+                </div>
+                <div class="mb-4">
+                    <div class="text-sm text-gray-400 mb-2">Key Results:</div>
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <span class="bg-green-500/20 text-green-300 px-2 py-1 rounded-full border border-green-500/30">83.93% Test Accuracy</span>
+                        <span class="bg-blue-500/20 text-blue-300 px-2 py-1 rounded-full border border-blue-500/30">25K+ Images</span>
+                    </div>
+                </div>
+                <a href="https://github.com/HarshithaTech/intel-image-classification-using-CNN" target="_blank" class="inline-flex items-center text-orange-400 hover:text-orange-300 transition-all duration-300 group-hover:translate-x-2">
+                    🔗 <span class="ml-2">View on GitHub</span>
+                </a>
+            </div>
+            
             <div class="group bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl hover:shadow-purple-500/20 relative overflow-hidden">
                 <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-pink-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
                 <div class="flex items-center mb-4">
@@ -315,10 +342,14 @@
     <!-- Leadership Section -->
     <section class="py-24 px-4 max-w-4xl mx-auto">
         <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">Leadership</h2>
-        <div class="flex justify-center">
+        <div class="grid md:grid-cols-2 gap-6">
             <div class="bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300 hover:-translate-y-2">
                 <h3 class="text-xl font-bold text-purple-400 mb-2">Deputy General Secretary</h3>
                 <p class="text-gray-300">InnovateX Technical Club</p>
+            </div>
+            <div class="bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300 hover:-translate-y-2">
+                <h3 class="text-xl font-bold text-blue-400 mb-2">Department LinkedIn Manager</h3>
+                <p class="text-gray-300">AI & ML Department Social Media</p>
             </div>
         </div>
     </section>
